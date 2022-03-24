@@ -1,0 +1,36 @@
+
+.mat-row .mat-cell {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    cursor: pointer;
+}
+
+  
+.mat-row:hover .mat-cell {
+    border-color: currentColor;
+}
+
+
+.title-details-container {
+    background-color: #424242;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 2%;
+    padding: 2%;
+    gap:12px;
+}
+ 
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    margin-bottom: 4%;
+}
+
+.text-decorator {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+.principal-text {
+    font-size: 3rem;
+}

@@ -1,0 +1,6 @@
+<div class="link-list-container">
+    <a mat-button *ngFor="let link of links" class="link-list-item" [routerLink]="link?.routerLink">
+        <mat-icon>{{link?.icon}}</mat-icon>
+        {{link?.name}}
+    </a>
+</div>

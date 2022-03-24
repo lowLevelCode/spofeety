@@ -1,0 +1,18 @@
+<mat-drawer-container fullscreen>
+    <mat-drawer mode="side" opened class="side-nav">
+        <div class="spofeety-icon-container">
+            <img [src]="spofeetyIconImg" alt="">
+            <span>Spofeety</span>
+        </div>
+        <app-access-links></app-access-links>
+    </mat-drawer>
+
+    <mat-drawer-content>
+        <div>
+            <app-toolbar-with-search></app-toolbar-with-search>
+            <div class="container-parent">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </mat-drawer-content>
+</mat-drawer-container>

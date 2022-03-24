@@ -1,0 +1,1 @@
+export const ACCESS_TOKEN_SPOFEETY = 'access_token_spofeety';

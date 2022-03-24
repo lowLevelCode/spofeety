@@ -1,0 +1,22 @@
+<div class="toolbar-container">
+    <div class="inputs-container">
+        <div class="inputs-icons">
+            <button mat-icon-button>
+                <mat-icon>chevron_left</mat-icon>
+            </button>
+            <button mat-icon-button>
+                <mat-icon>chevron_right</mat-icon>
+            </button>            
+        </div>
+
+        <mat-form-field appearance="outline" class="input-field">
+            <mat-label>Albums</mat-label>
+            <input matInput placeholder="Buscar" [formControl]="buscarControl">
+            <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+    </div>
+    
+    <div>
+        <mat-icon>person</mat-icon>
+    </div>
+</div>

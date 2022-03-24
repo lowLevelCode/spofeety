@@ -1,0 +1,12 @@
+.flex-title {
+    display: flex;
+    gap: 12px;
+    font-size: 1.2rem;
+}
+
+.dialog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: hidden;
+}

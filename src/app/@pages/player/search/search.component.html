@@ -1,0 +1,8 @@
+<div>
+    <h1>Albums</h1>
+
+    <div class="albums-list-container">
+        <app-card-spotify *ngFor="let item of albums?.items" [primaryText]="item?.name" [secondaryText]="getTextFromArtisName(item?.artists)" imgTypeStyle="normal" cardType="album" [img]="getImage(item?.images)" (click)="onViewAlbumById(item?.id)">
+        </app-card-spotify>
+    </div>
+</div>
