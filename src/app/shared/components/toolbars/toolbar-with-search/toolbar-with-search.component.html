@@ -1,22 +1,51 @@
 <div class="toolbar-container">
     <div class="inputs-container">
         <div class="inputs-icons">
-            <button mat-icon-button>
+            <button mat-icon-button (click)="locationBack()">
                 <mat-icon>chevron_left</mat-icon>
             </button>
-            <button mat-icon-button>
+            <button mat-icon-button (click)="locationForward()">
                 <mat-icon>chevron_right</mat-icon>
-            </button>            
+            </button>
         </div>
 
         <mat-form-field appearance="outline" class="input-field">
-            <mat-label>Albums</mat-label>
+            <mat-label>Search</mat-label>
             <input matInput placeholder="Buscar" [formControl]="buscarControl">
             <mat-icon matSuffix>search</mat-icon>
         </mat-form-field>
     </div>
-    
+
     <div>
-        <mat-icon>person</mat-icon>
+        <button mat-button [matMenuTriggerFor]="menu">
+            <div class="flex-content">
+                <div class="userName">{{userName}}</div>
+                <mat-icon>person</mat-icon>
+            </div>
+        </button>
     </div>
+
+    <mat-menu #menu="matMenu" xPosition="before">
+        <button mat-menu-item>
+            <mat-icon></mat-icon>
+            <span>Account</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon></mat-icon>
+            <span>Profile</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon></mat-icon>
+            <span>Private session</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon></mat-icon>
+            <span>Settins</span>
+        </button>
+        <button mat-menu-item (click)="logOut()">
+            <mat-icon>logout</mat-icon>
+            <span>Log out</span>
+        </button>
+    </mat-menu>
+
 </div>

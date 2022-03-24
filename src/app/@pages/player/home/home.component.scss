@@ -1,0 +1,18 @@
+.title-container {
+    font-size: 2.2rem;
+}
+
+.elements-container {
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    background-color: #424242;
+    border-radius: 20px;
+    width: 100%;
+    gap:100px;
+}
+
+.img-cassette {
+    width: 500px;
+    height: 500px;
+}

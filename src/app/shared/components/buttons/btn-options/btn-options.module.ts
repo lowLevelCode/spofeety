@@ -1,19 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { LoginRoutingModule } from './login-routing.module';
-import { LoginComponent } from './login.component';
+import { BtnOptionsComponent } from './btn-options.component';
+import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+
 
 
 @NgModule({
   declarations: [
-    LoginComponent
+    BtnOptionsComponent
   ],
   imports: [
     CommonModule,
-    LoginRoutingModule,
+    MatIconModule,
     MatButtonModule
-  ]
+  ],
+  exports:[BtnOptionsComponent]
 })
-export class LoginModule { }
+export class BtnOptionsModule { }

@@ -32,6 +32,7 @@ export class LoginSpofeetyService {
 
   logout() {
     localStorage.removeItem(ACCESS_TOKEN_SPOFEETY);
+    location.reload();
   }
 
   isLogin(): boolean {

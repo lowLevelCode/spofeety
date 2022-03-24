@@ -7,6 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatMenuModule } from '@angular/material/menu';
 
 
 @NgModule({
@@ -17,10 +18,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     MatFormFieldModule,
     MatInputModule,
-    MatIconModule,    
+    MatIconModule,
     MatButtonModule,
     FormsModule,
     ReactiveFormsModule,
+    MatMenuModule,
   ],
   exports: [ToolbarWithSearchComponent]
 })

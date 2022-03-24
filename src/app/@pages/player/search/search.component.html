@@ -1,8 +1,28 @@
 <div>
-    <h1>Albums</h1>
 
-    <div class="albums-list-container">
-        <app-card-spotify *ngFor="let item of albums?.items" [primaryText]="item?.name" [secondaryText]="getTextFromArtisName(item?.artists)" imgTypeStyle="normal" cardType="album" [img]="getImage(item?.images)" (click)="onViewAlbumById(item?.id)">
-        </app-card-spotify>
+    <div class="search-container" *ngIf="!albums?.items">
+        <div class="elements-container">
+            <div class="title-container">Search some!</div>            
+        </div>
     </div>
+
+    <div *ngIf="albums?.items?.length > 0">
+        <div class="flex-content">
+            <h1>Albums</h1>
+            <app-btn-options (previousEvent)="onPrev()" (nextEvent)="onNext()"></app-btn-options>
+        </div>        
+        <br>
+        <div class="albums-list-container">
+            <app-card-spotify *ngFor="let item of albums?.items" [primaryText]="item?.name"
+                [secondaryText]="getTextFromArtisName(item?.artists)" imgTypeStyle="normal" cardType="album"
+                [img]="getImage(item?.images)" (click)="onViewAlbumById(item?.id)">
+            </app-card-spotify>
+        </div>
+
+        <br>
+        <div class="flex-content-end">
+            <app-btn-options></app-btn-options>
+        </div>
+    </div>
+
 </div>

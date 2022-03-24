@@ -28,6 +28,22 @@ export class SearchComponent implements OnInit {
       );
   }
 
+  onNext() {
+    const next = this.albums?.next;
+
+    if (next)
+      this._spotifyService.getRequest(next)
+        .subscribe((search: SearchSpotify) => this.albums = search.albums)
+  }
+
+  onPrev() {
+    const previous = this.albums?.previous;
+
+    if (previous)
+      this._spotifyService.getRequest(previous)
+        .subscribe((search: SearchSpotify) => this.albums = search.albums)
+  }
+
   getTextFromArtisName(artist: Artist[]): string {
     return artist.map((artist: Artist) => artist.name).join(',');
   }
@@ -36,7 +52,7 @@ export class SearchComponent implements OnInit {
     return images[0].url;
   }
 
-  onViewAlbumById(id:string) {    
+  onViewAlbumById(id: string) {
     this._router.navigate([`player/albums/${id}/tracks`]);
   }
 }

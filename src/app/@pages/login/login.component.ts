@@ -9,6 +9,8 @@ import { SpotifyService } from 'src/app/services/spotify.service';
 })
 export class LoginComponent implements OnInit {
 
+  spofeetyIconImg: string = 'assets/img/spofeety.png';
+
   constructor(
     private readonly _loginSpofeety: LoginSpofeetyService,
     private readonly _router: Router) { }

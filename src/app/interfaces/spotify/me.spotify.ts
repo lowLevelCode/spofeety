@@ -8,7 +8,7 @@ export interface FollowersSpotify {
 export interface MeSpotify {
     birthdate: string;
     country: string;
-    displayName: string;
+    display_name: string;
     email: string;
     external_urls: ExternalUrlsSpotify;
     followers: FollowersSpotify;

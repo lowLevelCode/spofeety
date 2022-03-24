@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlayerComponent implements OnInit {
 
-  spofeetyIconImg:string= '/assets/img/spofeety.png';
+  spofeetyIconImg:string= 'assets/img/spofeety.png';
 
   constructor() { }
 

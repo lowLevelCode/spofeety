@@ -21,3 +21,14 @@
     width: 60%;    
     font-weight: 500;
 }
+
+.flex-content {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.userName {
+    margin-top: 5px;
+    font-size: 1rem;
+}

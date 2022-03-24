@@ -35,6 +35,10 @@ export class SpotifyService {
   getTracksById(id: string): Observable<any> {
     return this._htppClient.get<any>(`${this.spofeetyUrl}/tracks/${id}`);
   }
+
+  getRequest(request:string): Observable<SearchSpotify> {
+    return this._htppClient.get<SearchSpotify>(request);
+  }
 }
 
 
