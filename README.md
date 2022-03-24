@@ -1,27 +1,79 @@
-# Spofeety
+<h1 align="center">Spofeety</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
 
-## Development server
+<hr>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## The project
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.6 and node v16.13.1.
 
-## Code scaffolding
+This project is part of recruitment for [Omnidoc]("https://www.omnidoc.com/"),
+this is only a simple home test for Spotify API: https://developer.spotify.com/documentation/web-api/reference/#/.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Proposed Objective
+Use the spotify api, get the following requirements.
+* Show the albums list for an artist given
+* Show the tracks list for an album given
+* Show tracks detail
 
-## Build
+## Routes in the app.
+* player
+  - albums
+  - home
+  - search
+* login
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Architecture
+* src/
+  - app
+  - assets
+  - enviroments
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## How to start
 
-## Running end-to-end tests
+### Prerequisites
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Install [Node.js] which includes [Node Package Manager][npm]
+- Install [Git]("https://git-scm.com/downloads")
 
-## Further help
+### Setting Up a Project
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Install the Angular CLI globally:
+
+```
+npm install -g @angular/cli
+```
+
+Clone this repo:
+
+```
+git clone https://github.com/lowLevelCode/spofeety
+```
+
+Move to [PROJECT NAME] and install dependencies:
+
+```
+cd [PROJECT NAME]  -- "spofeety"
+npm install
+```
+
+Run the app (this run on a development server):
+
+```
+npm run start
+```
+
+### Build
+
+Build the app.
+
+```
+npm run build
+```
+
+### Deploy
+This app was deployed on github pages
+
+```
+npm run deploy-gh
+```
